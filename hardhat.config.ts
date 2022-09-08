@@ -20,16 +20,14 @@ const config: HardhatUserConfig = {
       },
     },
   },
-  defaultNetwork: "hardhat",
+
   networks: {
     hardhat: {
       gasPrice: 100000000000, // 100Gwei
     },
     rinkeby: {
       url: process.env.RINKEBY_URL || "",
-      accounts: [process.env.PRIVATE_KEY] || [
-        "0x0000000000000000000000000000000000000000",
-      ],
+      accounts: [`${process.env.PRIVATE_KEY}`],
       saveDeployments: true,
     },
   },
