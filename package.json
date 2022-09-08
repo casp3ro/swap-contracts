@@ -6,7 +6,7 @@
     "format-check": " npx eslint '**/*.{js,ts}' && npx solhint 'contracts/**/*.sol' && npx prettier '**/*.{json,sol,md,ts}' --check",
     "deploy-rinkeby": "npx hardhat deploy --network rinkeby --tags CONTRACTS",
     "verify-rinkeby": "set -a; . ./.env; set +a; npx hardhat --network rinkeby etherscan-verify --api-key \"$ETHERSCAN_API_KEY\"",
-    "package": "npx hardhat compile && cd package && npx tsc"
+    "package": "cd package && npx tsc"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.10",
