@@ -34,4 +34,4 @@ jobs:
         run: cd package && npm config set @kacpermichalik:registry https://npm.pkg.github.com
 
       - name: Publish pacakge
-        run: cd package && npm publish @kacpermichalik:registry https://npm.pkg.github.com
+        run: cd package && npm publish --@kacpermichalik:registry=https://npm.pkg.github.com/
