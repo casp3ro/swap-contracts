@@ -1,5 +1,5 @@
 {
-  "name": "swap-contracts-pack",
+  "name": "@kacpermichalik/swap-contracts-pack",
   "version": "0.0.1",
   "description": "Utility pack",
   "main": "index.js",
