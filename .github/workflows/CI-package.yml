@@ -28,7 +28,8 @@ jobs:
           npm run package
 
       - name: Set npm config
-        run: cd package && npm config set https://npm.pkg.github.com/:_authToken ${{ secrets.G_ACCESS_TOKEN }}
+        run: cd package && npm config set
+          //https://npm.pkg.github.com/:_authToken ${{ secrets.G_ACCESS_TOKEN }}
 
       - name: Set npm registry
         run: cd package && npm config set @kacpermichalik:registry https://npm.pkg.github.com
