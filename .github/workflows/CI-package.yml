@@ -28,11 +28,10 @@ jobs:
           npm run package
 
       - name: Set npm config
-        run: cd package && npm config set
-          //npm.pkg.github.com/:_authToken ${{ secrets.G_ACCESS_TOKEN }}
+        run: cd package && npm config set //npm.pkg.github.com/:_authToken ${{ secrets.G_ACCESS_TOKEN }}
 
       - name: Set npm registry
         run: cd package && npm config set @kacpermichalik:registry https://npm.pkg.github.com
 
-      - name: Publish pacakge
-        run: cd package && npm publish --scope=@kacpermichalik
+      - name: Publish package
+        run: cd package && npm publish --@kacpermichalik:registry=https://npm.pkg.github.com/
