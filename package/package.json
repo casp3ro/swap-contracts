@@ -1,6 +1,6 @@
 {
   "name": "@kacpermichalik/swap-contracts-pack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility pack",
   "main": "index.js",
   "publishConfig": {
@@ -9,6 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
