@@ -3,7 +3,12 @@ import { utils } from "ethers";
 import { ethers } from "hardhat";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 import { solidity } from "ethereum-waffle";
-import { Swap, Swap__factory, Token, Token__factory } from "../typechain";
+import {
+  Swap,
+  Swap__factory,
+  Token,
+  Token__factory,
+} from "../package/src/typechain";
 import { baseTokenParams, quoteTokenParams } from "../utils/deploy.helpers";
 
 use(solidity);

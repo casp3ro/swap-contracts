@@ -1,3 +1,1 @@
-# Modern Ethereum smart contracts development
-
--package
+# Swap contracts based on Ethereum

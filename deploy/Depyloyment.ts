@@ -1,7 +1,6 @@
 import { ethers } from "hardhat";
 import { DeployFunction } from "hardhat-deploy/dist/types";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
-import { Swap, Token } from "../typechain";
 import {
   baseTokenParams,
   priceRatio,
@@ -41,15 +40,15 @@ const deploy: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
     log: true,
   });
 
-  const baseTokenInstance = await ethers.getContractAt<Token>(
+  const baseTokenInstance = await ethers.getContractAt(
     "Token",
     baseToken.address
   );
-  const quoteTokenInstance = await ethers.getContractAt<Token>(
+  const quoteTokenInstance = await ethers.getContractAt(
     "Token",
     quoteToken.address
   );
-  const swapInstance = await ethers.getContractAt<Swap>("Swap", swap.address);
+  const swapInstance = await ethers.getContractAt("Swap", swap.address);
 
   const approveBaseToken = await baseTokenInstance.approve(
     swap.address,

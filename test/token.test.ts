@@ -6,7 +6,7 @@ import { ethers } from "hardhat";
 import "@nomiclabs/hardhat-ethers";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 import { solidity } from "ethereum-waffle";
-import { Token, Token__factory } from "../typechain";
+import { Token, Token__factory } from "../package/src/typechain";
 
 use(solidity);
 
