@@ -1,6 +1,6 @@
 {
-  "name": "@kacpermichalik/swap-contracts-pack",
-  "version": "0.0.2",
+  "name": "@casp3ro/swap-contracts-pack",
+  "version": "0.0.3",
   "description": "Utility pack",
   "main": "index.js",
   "publishConfig": {
